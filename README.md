@@ -1,8 +1,8 @@
-Useful component for cheap radios that produce too much noise and overwhelm remote receiver. 
+Useful component to debug cheap radios that produce too much noise and overwhelm remote receiver. 
 
-Uses a gpio isr instead of RMT. If you cant get anything out of remote receiver you can try this. 
+Uses a gpio isr instead of RMT. Looks for patterns and only outputs data that isnt random. Can adjust the max capture length, shortest pulse length and idle limit. 
 
-Meant to be used more for debugging but could be used permanently.
+If you can't get anything out of remote receiver you can try this. 
 
     external_components:
       - source:
